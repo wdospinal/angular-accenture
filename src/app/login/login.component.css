@@ -5,3 +5,11 @@
 .example-spacer {
   flex: 1 1 auto;
 }
+
+.result {
+  color: green;
+}
+
+.error {
+  color: red;
+}

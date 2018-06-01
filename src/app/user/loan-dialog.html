@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Hi {{data.companyName}} worker!</h1>
+<div mat-dialog-content>
+  <div *ngIf="data.loan <= 0" class="alert alert-danger">
+    <a>You don't apply the requirements</a>
+  </div>
+  <div *ngIf="data.loan > 0">
+    <p>Your loan its</p>
+    {{data.loan | currency}}
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Ok</button>
+</div>
